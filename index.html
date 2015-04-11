@@ -19,7 +19,7 @@
 
         <header>
           <h1>Dokku-graduate</h1>
-          <h2>A simple environment lifecyle management plugin for dokku.</h2>
+          <h2>A simple environment life-cycle management plugin for Dokku.</h2>
         </header>
 
         <section id="downloads" class="clearfix">
@@ -44,7 +44,7 @@
 <h4>
 <a id="an-example" class="anchor" href="#an-example" aria-hidden="true"><span class="octicon octicon-link"></span></a>An Example</h4>
 
-<p>Say we have two Dokku apps running in both <code>development</code> and in <code>production</code>. One app is a Rails website, called <code>portal</code>, and the other is set of Sinatra web-services called <code>webservices</code>. Both of these apps share the same data mode, and the same data store (e.g. a PostgreSQL database). <code>portal</code> is an admin interface and <code>webservices</code> is for consumers.</p>
+<p>Say we have two Dokku apps running in both <code>development</code> and in <code>production</code>. One app is a Rails website, called <code>portal</code>, and the other is set of Sinatra web-services called <code>webservices</code>. Both of these apps share the same data model, and the same data store (e.g. a PostgreSQL database). <code>portal</code> is an admin interface and <code>webservices</code> is for consumers.</p>
 
 <p>We want to deploy updated projects with a new data model to <code>production</code>. Typically you'd write a Rails migration which you could then kick off as a Dokku hook, or perhaps manually once <code>portal</code> has deployed to <code>production</code>. However, what happens to <code>webservices</code>, which is also using the same data store? A new <code>webservices</code> that understands the updated data model also needs to be deployed.</p>
 
